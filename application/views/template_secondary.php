@@ -13,21 +13,21 @@
             <div class="navbar">
                 <div class="navbar-inner">
                     {menubar} 
-				</div>
+                </div>
             </div>           
             <div id="content">
                 <h1>{pagetitle}</h1>
-				<div class="alert alert-info">{remaining_tasks} tasks are left to do!</div>
-				<table class="table">
-					{display_tasks}
-					<tr>
-						<td>{id}</td>
-						<td>{task}</td>
-						<td>{priority}</td>
-					</tr>
-					{/display_tasks}
-				</table>
-                {content}
+                
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        {leftside}
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        {rightside}
+                    </div>
+                </div>
+                <!-- ???????????????????? -->
+    
             </div>
             <div id="footer" class="span12">
                 Copyright &copy; 2017,  <a href="mailto:someone@somewhere.com">Me</a>.
