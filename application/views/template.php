@@ -3,10 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<title>{pagetitle}</title>
+                {alerts}
+
+                {caboose_styles}
         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
         <link rel="stylesheet" type="text/css" href="/assets/css/default.css"/>
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+
+
+                
+        
+
 	</head>
 	<body>
         <div class="container">
@@ -23,8 +32,11 @@
             <div id="footer" class="span12">
                 Copyright &copy; 2017,  <a href="mailto:someone@somewhere.com">Me</a>.
             </div>
+        {caboose_scripts}
+        {caboose_trailings}
         </div>
-        <script src="/assets/js/jquery-1.11.1.min.js"></script>
-        <script src="/assets/js/bootstrap.min.js"></script>
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+
+
 	</body>
 </html>
