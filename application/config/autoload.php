@@ -39,7 +39,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |  $autoload['packages'] = array(APPPATH.'third_party', '/usr/local/shared');
 |
 */
-$autoload['packages'] = array();
+//$autoload['packages'] = array();
+$autoload['packages'] = array(APPPATH.'third_party/caboose/');
 
 /*
 | -------------------------------------------------------------------
@@ -58,7 +59,9 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('parser', 'database', 'parsedown');
+//$autoload['libraries'] = array('parser', 'database', 'parsedown');
+//$autoload['libraries'] = array('parser', 'database', 'parsedown','session');
+$autoload['libraries'] = array('parser','database','parsedown','session','Caboose');
 
 /*
 | -------------------------------------------------------------------
@@ -89,8 +92,8 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url');
-
+//$autoload['helper'] = array('url');
+$autoload['helper'] = array('url','formfields','formfields_helper');
 /*
 | -------------------------------------------------------------------
 |  Auto-load Config files
@@ -134,4 +137,7 @@ $autoload['language'] = array();
 */
 //$autoload['model'] = array();
 $autoload['model'] = array('flags', 'groups', 'priorities', 'sizes', 'statuses', 'tasks');
+
+
+
 
